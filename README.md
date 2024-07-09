@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# React Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains all important React Hooks with explanations and examples.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Hooks Covered](#hooks-covered)
+  - [useState Hook](#usestate-hook)
+  - [useEffect Hook](#useeffect-hook)
+  - [useRef Hook](#useref-hook)
+  - [useMemo Hook](#usememo-hook)
+  - [useCallback Hook](#usecallback-hook)
+  - [useContext Hook](#usecontext-hook)
+  - [useReducer Hook](#usereducer-hook)
+  - [useLayoutEffect Hook](#uselayouteffect-hook)
+  - [Custom React Hook](#custom-react-hook)
 
-### `npm start`
+## Hooks Covered
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### useState Hook
+The `useState` hook is used to add state to functional components. It returns an array with two elements: the current state and a function to update it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### useEffect Hook
+The `useEffect` hook lets you perform side effects in function components. It serves the same purpose as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in React classes.
 
-### `npm test`
+### useRef Hook
+The `useRef` hook is used to persist values between renders without causing a re-render. It is commonly used to access a DOM element directly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### useMemo Hook
+The `useMemo` hook is used to memoize expensive functions so that they are only recomputed when their dependencies change, improving performance.
 
-### `npm run build`
+### useCallback Hook
+The `useCallback` hook returns a memoized callback function that only changes if one of its dependencies changes. It is useful for optimizing child components that rely on callback functions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### useContext Hook
+The `useContext` hook is used to access the context in a functional component, providing a way to pass data through the component tree without having to pass props down manually at every level.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### useReducer Hook
+The `useReducer` hook is an alternative to `useState` for managing complex state logic. It accepts a reducer function and an initial state, and returns the current state and a dispatch function.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### useLayoutEffect Hook
+The `useLayoutEffect` hook is similar to `useEffect`, but it fires synchronously after all DOM mutations. It can be used to read layout from the DOM and synchronously re-render.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Custom React Hook
+You can create your own custom hooks to encapsulate and reuse stateful logic. A custom hook is a JavaScript function whose name starts with "use" and that may call other hooks.
